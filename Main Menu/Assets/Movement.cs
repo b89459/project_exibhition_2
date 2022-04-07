@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 using System;
+
 
 public class Movement : MonoBehaviour
 {
@@ -22,9 +24,10 @@ public class Movement : MonoBehaviour
 
     private Vector2 iniposition;
 
+   
     
     private float deltaX, deltaY;
-    private Touch touch;
+ 
     private static bool locked;
 
     private void start()
@@ -34,15 +37,15 @@ public class Movement : MonoBehaviour
 
     private void update()
     {
-        if (Input.touchCount > 0 && !locked)
+        if (Input.touchCount > 0 )
         {
             Touch touch = Input.GetTouch(0);
-            Vector2 touchpos = Camera.main.ScreenToWorldPoint(touch.position);
-
+            Vector3 touchpos = Camera.main.ScreenToWorldPoint(touch.position);
+            locked = false;
             switch (touch.phase)
             {
                 case TouchPhase.Began:
-                    if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(touchpos))
+                  //  if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(touchpos))
                     {
                         deltaX = touchpos.x - transform.position.x;
                         deltaY = touchpos.x - transform.position.y;
