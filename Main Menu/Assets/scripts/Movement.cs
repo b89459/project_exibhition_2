@@ -12,11 +12,12 @@ public class Movement : MonoBehaviour
     [SerializeField] private Transform Place;
 
     private Vector3 iniposition;
-    GameObject particle;
+   
     private Camera cameramain;
-    private float deltaX, deltaY;
+
     Vector3 touchpos;
     private Touchh touchControls;
+    private float speed = 50f;
 
     private void Awake()
     {
@@ -31,18 +32,19 @@ public class Movement : MonoBehaviour
 
     private void OnEnable()
     {
-        EnhancedTouchSupport.Enable();
+       
         //   inputmanager.OnStartTouch += move;
-        UnityEngine.InputSystem.EnhancedTouch.Touch.onFingerDown += FingerDown;
+        
         touchControls.Enable();
+        EnhancedTouchSupport.Enable();
     }
 
 
     private void OnDisable()
     {
         //  inputmanager.OnEndTouch += move;
-        UnityEngine.InputSystem.EnhancedTouch.Touch.onFingerDown -= FingerDown;
         touchControls.Disable();
+        EnhancedTouchSupport.Disable();
     }
     public void move(Vector2 screenPosition, float time)
     {
@@ -64,14 +66,13 @@ public class Movement : MonoBehaviour
         }
 
     }
-    public void FingerDown(Finger finger)
-    {
-
-    }
-
+    
 
     private void Update()
     {
+
+
+
         foreach (UnityEngine.InputSystem.EnhancedTouch.Touch touch in UnityEngine.InputSystem.EnhancedTouch.Touch.activeTouches)
         {
             Vector2 screenPosition = touchControls.Touch.TouchPosition.ReadValue<Vector2>();
@@ -79,24 +80,42 @@ public class Movement : MonoBehaviour
             Vector3 screenCoordinates = new Vector3(screenPosition.x, screenPosition.y, cameramain.nearClipPlane);
             touchpos = cameramain.ScreenToWorldPoint(screenCoordinates);
             touchpos.z = 0;
+            if (touch.tapCount == 2)
+            {
+                if (locked == false)
+                {
+                    if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(touchpos)) { 
+
+
+                        Debug.Log("Done");
+                    transform.Rotate(0, 0, 45 * speed*Time.deltaTime);
+                    }
+            }
+        }
             if (touch.phase == UnityEngine.InputSystem.TouchPhase.Began)
             {
-                if (!locked && GetComponent<Collider2D>() == Physics2D.OverlapPoint(touchpos))
+                if (locked == false)
                 {
-                    transform.position = touchpos;
-                    deltaX = touchpos.x - transform.position.x;
-                    deltaY = touchpos.x - transform.position.y;
+                    if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(touchpos))
+                    {
+                        transform.position = touchpos;
+                      
+                            
+                        
+                    }
                 }
-
             };
             if (touch.phase == UnityEngine.InputSystem.TouchPhase.Moved)
             {
-
-                if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(touchpos))
+                if (locked == false)
                 {
 
-                    transform.position = touchpos;
-                    Debug.Log(transform.position);
+                    if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(touchpos))
+                    {
+
+                        transform.position = touchpos;
+                       
+                    }
                 }
             }
             if (touch.phase == UnityEngine.InputSystem.TouchPhase.Ended)
@@ -109,7 +128,7 @@ public class Movement : MonoBehaviour
             }
             else
             {
-
+                locked = false;
             }
 
         }

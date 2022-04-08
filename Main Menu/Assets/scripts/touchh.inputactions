@@ -1,5 +1,5 @@
 {
-    "name": "Touch",
+    "name": "touchh",
     "maps": [
         {
             "name": "Touch",
@@ -11,7 +11,7 @@
                     "id": "2ba592e6-c9eb-4090-88cd-ad583a4f54e2",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "MultiTap",
                     "initialStateCheck": false
                 },
                 {

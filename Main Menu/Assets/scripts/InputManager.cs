@@ -43,7 +43,7 @@ public class InputManager : Singleton<InputManager>
     }
     private void StartTouch(InputAction.CallbackContext context)
     {
-        Debug.Log("Touch started" + touchControls.Touch.TouchPosition.ReadValue<Vector2>());
+       
         if (OnStartTouch != null) OnStartTouch(touchControls.Touch.TouchPosition.ReadValue<Vector2>(), (float)context.startTime);
     }
     private void EndTouch(InputAction.CallbackContext context)
@@ -54,6 +54,7 @@ public class InputManager : Singleton<InputManager>
     {
         if (OnStartTouch != null) OnStartTouch(finger.screenPosition, Time.time);
     }
+   
     private void Update()
     {
         foreach (UnityEngine.InputSystem.EnhancedTouch.Touch touch in UnityEngine.InputSystem.EnhancedTouch.Touch.activeTouches)
