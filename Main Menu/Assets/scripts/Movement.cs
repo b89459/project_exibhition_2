@@ -55,8 +55,7 @@ public class Movement : MonoBehaviour
             touchpos.z = 0;
             if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(touchpos))
             {
-                transform.position = touchpos;
-
+           
             }
             if (Mathf.Abs(transform.position.x - Place.position.x) <= 0.5f && Mathf.Abs(transform.position.x - Place.position.x) <= 0.5f)
             {
@@ -80,18 +79,7 @@ public class Movement : MonoBehaviour
             Vector3 screenCoordinates = new Vector3(screenPosition.x, screenPosition.y, cameramain.nearClipPlane);
             touchpos = cameramain.ScreenToWorldPoint(screenCoordinates);
             touchpos.z = 0;
-            if (touch.tapCount == 2)
-            {
-                if (locked == false)
-                {
-                    if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(touchpos)) { 
-
-
-                        Debug.Log("Done");
-                    transform.Rotate(0, 0, 45 * speed*Time.deltaTime);
-                    }
-            }
-        }
+          
             if (touch.phase == UnityEngine.InputSystem.TouchPhase.Began)
             {
                 if (locked == false)
@@ -129,6 +117,24 @@ public class Movement : MonoBehaviour
             else
             {
                 locked = false;
+            }
+            if (touch.tapCount == 2)
+            {
+                if (locked == false)
+                {
+                    if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(touchpos))
+                    {
+
+
+                        Debug.Log("Done");
+                        transform.eulerAngles = new Vector3(
+    transform.eulerAngles.x,
+    transform.eulerAngles.y ,
+   transform.eulerAngles.z + 45
+);
+                        continue;
+                    }
+                }
             }
 
         }

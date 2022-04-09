@@ -4,6 +4,7 @@
 -a="E:\GGame\project_exibhition_2\Main Menu\Library\PlayerScriptAssemblies\UnityEngine.TestRunner.dll"
 -a="E:\GGame\project_exibhition_2\Main Menu\Library\PlayerScriptAssemblies\Unity.Timeline.dll"
 -a="E:\GGame\project_exibhition_2\Main Menu\Library\PlayerScriptAssemblies\Unity.TextMeshPro.dll"
+-a="E:\GGame\project_exibhition_2\Main Menu\Library\PlayerScriptAssemblies\Unity.InputSystem.dll"
 -a="E:\GGame\project_exibhition_2\Main Menu\Library\PlayerScriptAssemblies\UnityEngine.UI.dll"
 -a="E:\GGame\project_exibhition_2\Main Menu\Library\PlayerScriptAssemblies\Unity.Mathematics.dll"
 -a="E:\GGame\project_exibhition_2\Main Menu\Library\PlayerScriptAssemblies\Unity.2D.IK.Runtime.dll"

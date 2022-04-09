@@ -33,7 +33,7 @@ public partial class @Touchh : IInputActionCollection2, IDisposable
                     ""id"": ""2ba592e6-c9eb-4090-88cd-ad583a4f54e2"",
                     ""expectedControlType"": """",
                     ""processors"": """",
-                    ""interactions"": ""MultiTap"",
+                    ""interactions"": """",
                     ""initialStateCheck"": false
                 },
                 {
@@ -42,7 +42,7 @@ public partial class @Touchh : IInputActionCollection2, IDisposable
                     ""id"": ""8d909cab-6c8d-4d39-9e3d-e12076e36008"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": ""Press"",
+                    ""interactions"": ""Press(behavior=2)"",
                     ""initialStateCheck"": false
                 },
                 {
