@@ -14,15 +14,16 @@ public class Movement : MonoBehaviour
     private Vector3 iniposition;
    
     private Camera cameramain;
-
+    
     Vector3 touchpos;
     private Touchh touchControls;
-    private float speed = 50f;
+   
+    
 
     private void Awake()
     {
         touchControls = new Touchh();
-
+        iniposition = transform.position;
         inputmanager = InputManager.Instance;
         cameramain = Camera.main;
     }
@@ -48,7 +49,7 @@ public class Movement : MonoBehaviour
     }
     public void move(Vector2 screenPosition, float time)
     {
-        if (!locked)
+        if (locked)
         {
             Vector3 screenCoordinates = new Vector3(screenPosition.x, screenPosition.y, cameramain.nearClipPlane);
             touchpos = cameramain.ScreenToWorldPoint(screenCoordinates);
@@ -60,7 +61,7 @@ public class Movement : MonoBehaviour
             if (Mathf.Abs(transform.position.x - Place.position.x) <= 0.5f && Mathf.Abs(transform.position.x - Place.position.x) <= 0.5f)
             {
                 transform.position = new Vector2(Place.position.x, Place.position.y);
-                locked = true;
+                
             }
         }
 
@@ -70,7 +71,7 @@ public class Movement : MonoBehaviour
     private void Update()
     {
 
-
+        
 
         foreach (UnityEngine.InputSystem.EnhancedTouch.Touch touch in UnityEngine.InputSystem.EnhancedTouch.Touch.activeTouches)
         {
@@ -116,7 +117,10 @@ public class Movement : MonoBehaviour
             }
             else
             {
-                locked = false;
+                
+                {
+                   // transform.position = iniposition;
+                }
             }
             if (touch.tapCount == 2)
             {
@@ -132,7 +136,7 @@ public class Movement : MonoBehaviour
     transform.eulerAngles.y ,
    transform.eulerAngles.z + 45
 );
-                        continue;
+                        break;
                     }
                 }
             }
