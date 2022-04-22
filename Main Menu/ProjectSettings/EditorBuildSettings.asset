@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/GameLvl1.unity
     guid: 41a3ec714e76ad74a93cc1a6408b109d
   - enabled: 0
@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/PauseMenu.unity
     guid: 13c66491930d9e64e9ceab3ed805a084
+  - enabled: 1
+    path: Assets/Scenes/GameLvl10.unity
+    guid: 5673dd9271393774987571874b1fe556
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: b080e701ae78a2345bdb825d715c75bb, type: 2}

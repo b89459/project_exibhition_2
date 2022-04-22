@@ -257,7 +257,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191334359}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.06, y: -0.6, z: -10}
+  m_LocalPosition: {x: 0.06, y: -0.6, z: -10.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -438,6 +438,7 @@ GameObject:
   m_Component:
   - component: {fileID: 774737571}
   - component: {fileID: 774737572}
+  - component: {fileID: 774737573}
   m_Layer: 0
   m_Name: image-removebg-preview (3)
   m_TagString: Untagged
@@ -510,6 +511,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &774737573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774737570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bb841d7c1d7d9442b37ca876a4f9ef2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Place: {fileID: 0}
 --- !u!1 &828455277
 GameObject:
   m_ObjectHideFlags: 0
@@ -557,6 +571,7 @@ GameObject:
   m_Component:
   - component: {fileID: 853070927}
   - component: {fileID: 853070928}
+  - component: {fileID: 853070929}
   m_Layer: 0
   m_Name: tangram square
   m_TagString: Untagged
@@ -629,6 +644,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &853070929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853070926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e43501a2f56b464c8728034317833df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Place: {fileID: 0}
 --- !u!1 &871905986
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,7 +681,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 871905986}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.14, y: -1.81, z: -5.6296086}
+  m_LocalPosition: {x: 2.62, y: -1.81, z: -5.6296086}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1497670336}
@@ -923,6 +951,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1497670336}
   - component: {fileID: 1497670337}
+  - component: {fileID: 1497670338}
   m_Layer: 0
   m_Name: right-angled-triangle-black-color-and-white-color-texture-white-board-clothing-apparel-transparent-png-1587051
   m_TagString: Untagged
@@ -995,6 +1024,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1497670338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497670335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77bfccfa0f6f6a741889d66ea7f2dcc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Place: {fileID: 0}
 --- !u!1 &1515982843
 GameObject:
   m_ObjectHideFlags: 0
@@ -1171,6 +1213,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1803661518}
   - component: {fileID: 1803661519}
+  - component: {fileID: 1803661520}
   m_Layer: 0
   m_Name: right-angled-triangle-black-color-and-white-color-texture-white-board-clothing-apparel-transparent-png-1587051
     (2)
@@ -1244,6 +1287,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1803661520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803661517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa201a310c287e479c7aaa35825be85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Place: {fileID: 0}
 --- !u!1 &1878135653
 GameObject:
   m_ObjectHideFlags: 0
@@ -1254,6 +1310,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1878135654}
   - component: {fileID: 1878135655}
+  - component: {fileID: 1878135656}
   m_Layer: 0
   m_Name: right-angled-triangle-black-color-and-white-color-texture-white-board-clothing-apparel-transparent-png-1587051
     (4)
@@ -1327,6 +1384,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1878135656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878135653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1957bffe7062024e9edb40541d77885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Place: {fileID: 0}
 --- !u!1 &2037724243
 GameObject:
   m_ObjectHideFlags: 0
@@ -1337,6 +1407,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2037724244}
   - component: {fileID: 2037724245}
+  - component: {fileID: 2037724246}
   m_Layer: 0
   m_Name: right-angled-triangle-black-color-and-white-color-texture-white-board-clothing-apparel-transparent-png-1587051
     (3)
@@ -1410,6 +1481,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2037724246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037724243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b63dc0cc00826cc47a68759f8703371a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Place: {fileID: 0}
 --- !u!1 &2139447765
 GameObject:
   m_ObjectHideFlags: 0
@@ -1420,6 +1504,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2139447766}
   - component: {fileID: 2139447767}
+  - component: {fileID: 2139447768}
   m_Layer: 0
   m_Name: right-angled-triangle-black-color-and-white-color-texture-white-board-clothing-apparel-transparent-png-1587051
     (1)
@@ -1493,6 +1578,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2139447768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139447765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bb948a9abdfde047b51310944739cf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Place: {fileID: 0}
 --- !u!1001 &2146979348
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1500,6 +1598,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4882685764900917394, guid: 9a6d1f11e5b975d49a2abe8798d029e8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 898
+      objectReference: {fileID: 0}
+    - target: {fileID: 4882685764900917394, guid: 9a6d1f11e5b975d49a2abe8798d029e8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 487
+      objectReference: {fileID: 0}
     - target: {fileID: 5716536080029294073, guid: 9a6d1f11e5b975d49a2abe8798d029e8, type: 3}
       propertyPath: m_Name
       value: Canvas

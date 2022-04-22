@@ -10,7 +10,6 @@ ScriptsOnlyBuild:
     - mov4
     - mov5
     - mov6
-    - rortation
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
@@ -43,6 +42,9 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEditor.UI.dll:
+    - UnityEditor.UI.ButtonEditor
+    - UnityEditor.UI.ImageEditor
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.UI.Button
@@ -52,7 +54,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Shadow
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/GameLvl1.unity:
+    Assets/Scenes/GameLvl10.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -62,8 +64,6 @@ ScriptsOnlyBuild:
     - Class: 21
       Script: {instanceID: 0}
     - Class: 28
-      Script: {instanceID: 0}
-    - Class: 45
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
@@ -76,51 +76,49 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1600}
+      Script: {instanceID: 1564}
     - Class: 114
-      Script: {instanceID: 1884}
+      Script: {instanceID: 1848}
     - Class: 114
-      Script: {instanceID: 1968}
+      Script: {instanceID: 1932}
     - Class: 114
-      Script: {instanceID: 2188}
+      Script: {instanceID: 2008}
     - Class: 114
-      Script: {instanceID: 2428}
+      Script: {instanceID: 2154}
     - Class: 114
-      Script: {instanceID: 2438}
+      Script: {instanceID: 2296}
     - Class: 114
-      Script: {instanceID: 2928}
+      Script: {instanceID: 2396}
     - Class: 114
-      Script: {instanceID: 3132}
+      Script: {instanceID: 2406}
     - Class: 114
-      Script: {instanceID: 3390}
+      Script: {instanceID: 2896}
     - Class: 114
-      Script: {instanceID: 3820}
+      Script: {instanceID: 3100}
     - Class: 114
-      Script: {instanceID: 4234}
+      Script: {instanceID: 3358}
     - Class: 114
-      Script: {instanceID: 4480}
+      Script: {instanceID: 3788}
     - Class: 114
-      Script: {instanceID: 4804}
+      Script: {instanceID: 4202}
     - Class: 114
-      Script: {instanceID: 5262}
+      Script: {instanceID: 4448}
     - Class: 114
-      Script: {instanceID: 5474}
+      Script: {instanceID: 4688}
     - Class: 114
-      Script: {instanceID: 5906}
+      Script: {instanceID: 4774}
     - Class: 114
-      Script: {instanceID: 5924}
+      Script: {instanceID: 5132}
     - Class: 114
-      Script: {instanceID: 29754}
+      Script: {instanceID: 5234}
     - Class: 114
-      Script: {instanceID: 29760}
+      Script: {instanceID: 5244}
     - Class: 114
-      Script: {instanceID: 29766}
+      Script: {instanceID: 5448}
     - Class: 114
-      Script: {instanceID: 29772}
+      Script: {instanceID: 5684}
     - Class: 114
-      Script: {instanceID: 29778}
-    - Class: 114
-      Script: {instanceID: 29784}
+      Script: {instanceID: 5900}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -247,7 +245,19 @@ ScriptsOnlyBuild:
       Hash: afd6a99dc1a45f2e0729df8c646b072c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
+    className: mov4
+  - hash:
+      serializedVersion: 2
+      Hash: afd6a99dc1a45f2e0729df8c646b072c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
     className: Movement
+  - hash:
+      serializedVersion: 2
+      Hash: afd6a99dc1a45f2e0729df8c646b072c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: mov3
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -586,6 +596,12 @@ ScriptsOnlyBuild:
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: afd6a99dc1a45f2e0729df8c646b072c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: mov1
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -664,6 +680,12 @@ ScriptsOnlyBuild:
     className: InputDebuggerWindow
   - hash:
       serializedVersion: 2
+      Hash: afd6a99dc1a45f2e0729df8c646b072c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: mov2
+  - hash:
+      serializedVersion: 2
       Hash: b424b4eeb810aecb0ff91c62639241e9
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.Experimental.U2D.Animation
@@ -692,6 +714,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.UI
     className: InputSystemUIInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: afd6a99dc1a45f2e0729df8c646b072c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: mov6
   - hash:
       serializedVersion: 2
       Hash: 3165968ba45c74472d279ba04455fccb
@@ -752,6 +780,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.Experimental.U2D.Animation
     className: SpriteLibraryAsset
+  - hash:
+      serializedVersion: 2
+      Hash: afd6a99dc1a45f2e0729df8c646b072c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: mov5
   - hash:
       serializedVersion: 2
       Hash: 72763ba72b43403ee09a4c54b07cb346
@@ -854,43 +888,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
-  - hash:
-      serializedVersion: 2
-      Hash: afd6a99dc1a45f2e0729df8c646b072c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: mov1
-  - hash:
-      serializedVersion: 2
-      Hash: afd6a99dc1a45f2e0729df8c646b072c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: mov2
-  - hash:
-      serializedVersion: 2
-      Hash: afd6a99dc1a45f2e0729df8c646b072c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: mov3
-  - hash:
-      serializedVersion: 2
-      Hash: afd6a99dc1a45f2e0729df8c646b072c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: mov4
-  - hash:
-      serializedVersion: 2
-      Hash: afd6a99dc1a45f2e0729df8c646b072c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: mov5
-  - hash:
-      serializedVersion: 2
-      Hash: afd6a99dc1a45f2e0729df8c646b072c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: mov6
   platform: 13
   scenePathNames:
-  - Assets/Scenes/GameLvl1.unity
+  - Assets/Scenes/GameLvl10.unity
   playerPath: E:/GGame/project_exibhition_2/Main Menu/aaa.apk
