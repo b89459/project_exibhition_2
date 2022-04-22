@@ -28,7 +28,7 @@ public class Movement : MonoBehaviour
         cameramain = Camera.main;
     }
 
-    private static bool locked;
+    public static bool locked;
 
 
     private void OnEnable()
@@ -113,6 +113,7 @@ public class Movement : MonoBehaviour
                 {
                     transform.position = new Vector2(Place.position.x, Place.position.y);
                     locked = true;
+                    gameObject.GetComponent<Collider2D>().enabled = false;
                 }
             }
             else

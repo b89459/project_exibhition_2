@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;   
-    public GameObject pauseMenuUI;  
+    public GameObject pauseMenuUI;
+    public GameObject winMenu;
     
    public void onCLick()
     {
@@ -33,5 +34,10 @@ public class PauseMenu : MonoBehaviour
     {
         Debug.Log ("QG ");
         Application.Quit();
+    }
+    public void Update()
+    {
+        if(Movement.locked == true && mov1.locked == true && mov2.locked == true && mov3.locked == true && mov4.locked == true && mov5.locked == true && mov6.locked == true)
+        winMenu.SetActive(true);
     }
 }

@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 0
@@ -20,5 +20,29 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameLvl10.unity
     guid: 5673dd9271393774987571874b1fe556
+  - enabled: 1
+    path: Assets/Scenes/GamaLvl2.unity
+    guid: 06762dca6066a92408ffb8ce653ec82c
+  - enabled: 1
+    path: Assets/Scenes/GameLvl3.unity
+    guid: 4807181f56277854fbbddd3bc9c68494
+  - enabled: 1
+    path: Assets/Scenes/GameLvl4.unity
+    guid: 6f31e64ee1417b34b882c70954e2fdc1
+  - enabled: 1
+    path: Assets/Scenes/GameLvl5.unity
+    guid: df4fbdaeda256354b87522ba5263d087
+  - enabled: 1
+    path: Assets/Scenes/GameLvl6.unity
+    guid: 79a493e937be760419976dcecc764fc1
+  - enabled: 1
+    path: Assets/Scenes/GameLvl7.unity
+    guid: c1737dc7d1f30344f98fe9dadd548bc1
+  - enabled: 1
+    path: Assets/Scenes/GameLvl8.unity
+    guid: da54da9321f5fd74e8833c2f151a13d8
+  - enabled: 1
+    path: Assets/Scenes/GameLvl9.unity
+    guid: 71d4c1f66ce562840b03e7c9063bea99
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: b080e701ae78a2345bdb825d715c75bb, type: 2}

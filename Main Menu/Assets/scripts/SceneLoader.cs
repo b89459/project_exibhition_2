@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+    
     public void PlayGame()
     {
-        SceneManager.LoadScene("GameLvl1");
+        int x = Random.Range(1, 9);
+        SceneManager.LoadScene(x);
 
     }
     public void QuitGame()
